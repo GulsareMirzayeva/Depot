@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&display=swap");
+.header {
+  position: relative;
+  padding: 0 80px;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header .nav .page-references {
+  display: flex;
+}
+.header .nav .page-references .reference-wrapper {
+  padding: 30px 20px;
+  position: relative;
+}
+.header .nav .page-references .reference-wrapper .reference-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.header .nav .page-references .reference-wrapper .reference-menu {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition-duration: 800ms;
+  padding: 30px;
+  border-radius: 2px;
+  top: 82px;
+  position: absolute;
+  background-color: #010101;
+  display: flex;
+}
+.header .nav .page-references .reference-wrapper .reference-menu .menu-content {
+  width: 190px;
+}
+.header .nav .page-references .reference-wrapper .reference-menu .menu-content .menu-title {
+  cursor: pointer;
+}
+.header .nav .page-references .reference-wrapper .reference-menu .menu-content .menu-item {
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.header .nav .page-references .reference-wrapper:hover .reference-menu {
+  visibility: visible;
+  opacity: 1;
+  max-height: 900px;
+}
+.header .nav .logo {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  color: #080808;
+}
+.header .nav .action-buttons {
+  display: flex;
+}
+.header .nav .action-buttons .action-wrapper .action {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 30px 10px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.header .nav .action-buttons .action-wrapper .action .detail {
+  font-family: "Montserrat", sans-serif;
+  color: #929292;
+}
+.header .promotion-sidebar {
+  background-color: #010101;
+  padding: 66px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -1000px;
+  transition-duration: 700ms;
+}
+.header .promotion-sidebar .promotion-content {
+  text-align: center;
+  width: 460px;
+}
+.header .promotion-sidebar .promotion-content .title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.header .promotion-sidebar .promotion-content .text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.header .promotion-sidebar .promotion-content .images {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 10px;
+}
+.header .promotion-sidebar .promotion-content .images .image-url {
+  width: 92px;
+  height: 92px;
+  display: block;
+  position: relative;
+}
+.header .promotion-sidebar .promotion-content .images .image-url .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .promotion-sidebar .promotion-content .images .image-url .animation-container {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header .promotion-sidebar .promotion-content .images .image-url .animation-container .icon-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.header .promotion-sidebar .promotion-content .images .image-url .animation-container .icon-container .icon {
+  transition-duration: 500ms;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+}
+.header .promotion-sidebar .promotion-content .images .image-url:hover .animation-container {
+  visibility: visible;
+  opacity: 1;
+}
+.header .promotion-sidebar .promotion-content .images .image-url:hover .animation-container .icon-container .icon {
+  bottom: 50%;
+}
+.header .promotion-sidebar-close-button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.header .promotion-sidebar-open {
+  right: 0;
+}
+
+.footer {
+  background-color: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-secondary {
+  color: #929292;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hover-secondary:hover {
+  color: #929292;
+}
+
+.hover-white:hover {
+  color: #fff;
+}
+
+body {
+  overflow: hidden;
+}
+
+.products {
+  background-color: red;
+}
+
+.slider {
+  background-color: orange;
+}/*# sourceMappingURL=home.css.map */
