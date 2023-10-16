@@ -32,7 +32,7 @@
   border-radius: 2px;
   top: 82px;
   position: absolute;
-  background-color: #010101;
+  background-color: #212121;
   display: flex;
 }
 .header .nav .page-references .reference-wrapper .reference-menu .menu-content {
@@ -71,7 +71,7 @@
   color: #929292;
 }
 .header .promotion-sidebar {
-  background-color: #010101;
+  background-color: #212121;
   padding: 66px;
   height: 100vh;
   position: absolute;
@@ -159,7 +159,30 @@
 }
 
 .footer {
-  background-color: blue;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-content .footer .references-wrapper .reference-title {
+  font-size: 1.2em;
+}
+.footer .footer-content .footer .references-wrapper .reference-items {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-content .footer .references-wrapper .reference-items .reference-item {
+  margin-bottom: 10px;
+}
+.footer .footer-content .footer .references-wrapper .reference-items .reference-item .reference-link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer-content .footer .references-wrapper .reference-items .reference-item .reference-link:hover {
+  text-decoration: underline;
 }
 
 * {
@@ -181,6 +204,10 @@
   color: #fff;
 }
 
+.text-gray {
+  color: #a5a5a5;
+}
+
 .hover-secondary:hover {
   color: #929292;
 }
@@ -189,14 +216,188 @@
   color: #fff;
 }
 
-body {
-  overflow: hidden;
+.hover-black:hover {
+  color: #080808;
 }
 
-.products {
-  background-color: red;
+body {
+  overflow-x: hidden;
+}
+
+.products-section {
+  padding: 0 80px;
+  margin-bottom: 100px;
+}
+.products-section .product-nav {
+  display: flex;
+}
+.products-section .product-nav .categories {
+  display: flex;
+  letter-spacing: 2px;
+  margin-right: auto;
+}
+.products-section .product-nav .categories .category {
+  padding: 0 10px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 14px;
+  font-weight: 400;
+}
+.products-section .product-nav .filter-wrapper {
+  position: relative;
+}
+.products-section .product-nav .filter-wrapper .filter-button {
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: top;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.products-section .product-nav .filter-wrapper .filter-menu {
+  background-color: #212121;
+  position: absolute;
+  padding: 20px;
+  right: 10px;
+  top: 40px;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition-duration: 800ms;
+}
+.products-section .product-nav .filter-wrapper .filter-menu .menu-content {
+  width: 200px;
+}
+.products-section .product-nav .filter-wrapper .filter-menu .menu-content .menu-title {
+  color: white;
+  margin-bottom: 5px;
+}
+.products-section .product-nav .filter-wrapper .filter-menu .menu-content .menu-items .menu-item .menu-item-link {
+  text-decoration: none;
+  transition-duration: 300ms;
+}
+.products-section .product-nav .filter-wrapper:hover .filter-menu {
+  visibility: visible;
+  opacity: 1;
+  max-height: 900px;
+}
+.products-section .product-list {
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.products-section .product-list .product {
+  display: flex;
+  flex-direction: column;
+}
+.products-section .product-list .product .product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.products-section .product-list .product .product-image-wrapper .product-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products-section .product-list .product .product-image-wrapper .left-tag {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 15px;
+  left: 15px;
+}
+.products-section .product-list .product .product-image-wrapper .right-tag {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.products-section .product-list .product .product-image-wrapper .product-actions {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: -50px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+.products-section .product-list .product .product-image-wrapper .product-actions .quick-look {
+  background-color: #212121;
+  color: white;
+  padding: 3px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.products-section .product-list .product .product-image-wrapper .product-actions .like {
+  padding: 3px 5px;
+  background-color: #a5a5a5;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.products-section .product-list .product .product-image-wrapper .product-actions .like .heart-icon {
+  transition-duration: 300ms;
+}
+.products-section .product-list .product .product-title {
+  text-align: center;
+  font-weight: 500;
+}
+.products-section .product-list .product .product-footer {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+}
+.products-section .product-list .product .product-footer .add-to-cart {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 300ms;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.products-section .product-list .product .product-footer .price {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 300ms;
+}
+.products-section .product-list .product:hover .product-image-wrapper .product-actions {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.products-section .product-list .product:hover .product-footer .add-to-cart {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.products-section .product-list .product:hover .product-footer .price {
+  right: -100%;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .slider {
-  background-color: orange;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=home.css.map */
