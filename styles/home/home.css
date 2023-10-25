@@ -49,6 +49,7 @@
   visibility: visible;
   opacity: 1;
   max-height: 900px;
+  z-index: 1;
 }
 .header .nav .logo {
   font-weight: 700;
@@ -153,35 +154,38 @@
   color: white;
   cursor: pointer;
   font-size: 20px;
+  z-index: 1;
 }
 .header .promotion-sidebar-open {
   right: 0;
+  z-index: 1;
 }
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 20px 0;
 }
 .footer .footer-content {
   display: flex;
   justify-content: space-around;
 }
-.footer .footer-content .footer .references-wrapper .reference-title {
+.footer .footer-content .references-wrapper .reference-title {
   font-size: 1.2em;
 }
-.footer .footer-content .footer .references-wrapper .reference-items {
+.footer .footer-content .references-wrapper .reference-items {
   list-style: none;
   padding: 0;
 }
-.footer .footer-content .footer .references-wrapper .reference-items .reference-item {
+.footer .footer-content .references-wrapper .reference-items .reference-item {
   margin-bottom: 10px;
 }
-.footer .footer-content .footer .references-wrapper .reference-items .reference-item .reference-link {
+.footer .footer-content .references-wrapper .reference-items .reference-item .reference-link {
   text-decoration: none;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #929292;
 }
-.footer .footer-content .footer .references-wrapper .reference-items .reference-item .reference-link:hover {
+.footer .footer-content .references-wrapper .reference-items .reference-item .reference-link:hover {
   text-decoration: underline;
 }
 
@@ -268,6 +272,7 @@ body {
   opacity: 0;
   max-height: 0;
   transition-duration: 800ms;
+  z-index: 1;
 }
 .products-section .product-nav .filter-wrapper .filter-menu .menu-content {
   width: 200px;
@@ -284,6 +289,7 @@ body {
   visibility: visible;
   opacity: 1;
   max-height: 900px;
+  z-index: 1;
 }
 .products-section .product-list {
   padding: 25px 0;

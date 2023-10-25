@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/home/home.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
+
+    <div class="scroll">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <header class="header">
         <nav class="nav">
             <div class="page-references">
@@ -220,130 +228,108 @@
 
         </div>
     </header>
+    <header style="margin:60px 0 0 0 ;background-color: #fafafa; border-bottom: 1px solid #8d8d8d62;">
+        <section class="details">
+     
+        </section>
+        <section class="tabs">
+            <ul class="detail-tabs">
+                <li>
+                    <a class="detial-tabs-link active" data-id="description">Description</a>
+                </li>
+                <li>
+                    <a class="detial-tabs-link" data-id="info">additional information</a>
+                </li>
+                <li>
+                    <a class="detial-tabs-link" data-id="reiews">reviews</a>
+                </li>
+            </ul>
 
-    <div class="slider">
-        <div class="swiper" style="height: 50vh;  z-index: -1;">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper"  style="display: flex; align-items: center;">
-                <!-- Slides -->
-
-
+        </section>
+    </header>
+    <main>
+        <div class="dailog">
+            <div class="dialog-content">
+                
+              
             </div>
-            <!-- If we need pagination -->
-
-
-
         </div>
-    </div>
-
-
-    <section class="products-section">
-        <div class="product-nav">
-            
-            <div class="categories text-secondary">
-                <div class="category productlength hover-black">ALL</div>
-            
-               
-            </div>
-            <div class="filter-wrapper">
-                <div class="filter-button hover-secondary">Filter <i class="fa-solid fa-sort-down"></i></div>
-
-                <div class="filter-menu">
-                    <div class="menu-content">
-                        <div class="menu-title">SORT BY</div>
-                        <div class="menu-items">
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">Default</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white"
-                                    href="#">Popularity</a></div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">Average
-                                    rating</a></div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">Newness</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">Price:
-                                    Low
-                                    to High</a></div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">Price:
-                                    High
-                                    to Low</a></div>
-                        </div>
-                    </div>
-                    <div class="menu-content">
-                        <div class="menu-title">PRICE RANGE</div>
-                        <div class="menu-items">
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">ALL</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">$0-$10</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">$10-$20</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">$20-$30</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">$30-$40</a>
-                            </div>
-                            <div class="menu-item"><a class="menu-item-link text-gray hover-white" href="#">40$+</a>
-                            </div>
-
-                        </div>
-                    </div>
+        <section class="tabs-tap">
+             <div class="tabs-menu">
+                <div id="description" style="width:800px">
+                    <p class="descrio-title"></p>
                 </div>
-
-            </div>
-        </div>
-        <div class="dialog-content"></div>
-        <div class="product-list">
+                <div id="info"></div>
+                <div id="reiews"></div>
+             </div>
             
+        </section>
+        <hr class="tab-hr">
+        <section class="relaviews">
+           <div class="text-relaviews">
+             <h2>RELATED PRODUCTS
+            </h2>
+           </div>
+           <div class="row-relaviews"></div>
+        </section>
+    </main>
+    <footer>
+        <span class="hr"></span>
+        <section id="about-footer">
+            <ul class="about">
+                <li class="about-item"> <a href="#" class="about-title">CUSTOMER SERVICE</a></li>
+                <li> <a href="" class="about-link">Help & Contact Us</a></li>
+                <li> <a href="" class="about-link">Returns & Refunds</a></li>
+                <li> <a href="" class="about-link"> Online Stores</a></li>
+                <li> <a href="" class="about-link"> Terms & Conditions</a></li>
 
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="references-wrapper">
-                <h2 class="reference-title">CUSTOMER SERVICE</h2>
-                <ul class="reference-items">
-                    <li class="reference-item"><a class="reference-link" href="#">Help & Contact Us</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Returns & Refunds</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Online Stores</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <div class="references-wrapper">
-                <h2 class="reference-title">COMPANY</h2>
-                <ul class="reference-items">
-                    <li class="reference-item"><a class="reference-link" href="#">What We Do</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Available Services</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Latest Posts</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">FAQs</a></li>
-                </ul>
-            </div>
-            <div class="references-wrapper">
-                <h2 class="reference-title">SOCIAL MEDIA</h2>
-                <ul class="reference-items">
-                    <li class="reference-item"><a class="reference-link" href="#">Twitter</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Instagram</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Tumblr</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Pinterest</a></li>
-                </ul>
-            </div>
-            <div class="references-wrapper">
-                <h2 class="reference-title">PROFILE</h2>
-                <ul class="reference-items">
-                    <li class="reference-item"><a class="reference-link" href="#">My Account</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Checkout</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Order Tracking</a></li>
-                    <li class="reference-item"><a class="reference-link" href="#">Help & Support</a></li>
-                </ul>
-            </div>
-        </div>
+
+
+            </ul>
+            <ul class="about">
+                <li class="about-item"> <a href="#" class="about-title">COMPANY</a></li>
+                <li> <a href="" class="about-link">What We Do</a></li>
+                <li> <a href="" class="about-link">Available Services</a></li>
+                <li> <a href="" class="about-link">Latest Posts</a></li>
+                <li> <a href="" class="about-link">FAQs</a></li>
+
+
+
+
+            </ul>
+            <ul class="about">
+                <li class="about-item"> <a href="#" class="about-title">SOCIAL MEDIA</a></li>
+                <li> <a href="" class="about-link"> Twitter</a></li>
+                <li> <a href="" class="about-link">Instagram</a></li>
+                <li> <a href="" class="about-link">Tumblr</a></li>
+                <li> <a href="" class="about-link"> Pinterest</a></li>
+
+
+
+
+            </ul>
+            <ul class="about">
+                <li class="about-item"> <a href="#" class="about-title">PROFILE</a></li>
+                <li> <a href="" class="about-link">My Account</a></li>
+                <li> <a href="" class="about-link"> Checkout</a></li>
+                <li> <a href="" class="about-link"> Order Tracking</a></li>
+                <li> <a href="" class="about-link"> Help & Support</a></li>
+
+
+
+
+            </ul>
+        </section>
+        <span class="hs"></span>
+        <section class="footer-c">
+            12
+        </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/9df1d44044.js" crossorigin="anonymous"></script>
-    <script src="./scripts/ui.js"></script>
-    <script src="./scripts/basket.js"></script>
-    <script src="./scripts/app.js"></script>
-
 </body>
+<script src="./src/js/ui.js"></script>
+<script src="./src/js/app.js"></script>
+<script src="https://kit.fontawesome.com/9df1d44044.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </html>
